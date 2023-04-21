@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&display=swap');
+
+:root{
+    --primary-color:#a70b0b;
+    --dark-color:#0c0505;
+    --light-color:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0c0505;
+    color: #90b3b3;
+}
+h1{
+    color: white;
+}
+p{
+    margin: 8px 0;
+}
+.showcase{
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   background: url("https://i.ibb.co/vXqDmnh/background.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   box-shadow: inset -19px -77px 175px 56px rgba(0,0,0,0.75);
+}
+
+img{
+    width: 100%; 
+}
+
+.showcase::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.showcase-top img{
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.showcase-top button{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+
+}
+.btn-rounded{
+    border-radius: 5px;
+}
+
+.btn-xl{
+    font-size: 25px;
+    padding: 15px 40px  ;
+}
+.btn-icon{
+    margin-left: 16px;
+}
+.showcase-content{
+    position: relative;
+    width: 65%;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 75vh;
+}
+.showcase-content h1{
+    font-size: 50px;
+    font-weight: 700px;
+    margin-bottom: 32px;
+}
+
+.showcase-content p{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400px;
+    font-size: 30px;
+    margin-bottom:  32px;
+    
+}
